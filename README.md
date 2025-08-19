@@ -23,7 +23,7 @@ The project has been structured using the Atomic Design architecture. This organ
 
 - The molecules folder contains components that combine individual components from the [Atoms folder](/src/shared/components/atoms).
 - For example, the [InputField](/src/shared/components/molecules/InputField.tsx) component combines **Input**, **Label**, and **ErrorMessage**.
-- The molecules folder also contains the ProductCard and ProductSkeleton components that are use to display the products and show the loading skeleton.
+- The molecules folder also contains the ProductCard and ProductSkeleton components that are used to display the products and show the loading skeleton.
 
 **Organisms**:
 
@@ -33,7 +33,7 @@ The project has been structured using the Atomic Design architecture. This organ
 
 ## Implementation assumptions and decisions
 
-1. The [Login page](/src/pages/Login.tsx) makes good use of the aforementioned components, taking advantage of the props and atomic architecture. This makes use of the **InputField** and **PasswordField** components to allow for toggling the password input field. I've also made use of a JavaScript setTimeout function to simulate an API request/login attempt. This will then navigate the user to the main page. Error handling has been implemented to ensure that the user sees the relevant message close to the respective input. There is also a handleChange function that makes it easy to update the input fields using without repetition.
+1. The [Login page](/src/pages/Login.tsx) makes good use of the aforementioned components, taking advantage of the props and atomic architecture. This makes use of the **InputField** and **PasswordField** components to allow for toggling the password input field. I've also made use of a JavaScript setTimeout function to simulate an API request/login attempt. This will then navigate the user to the main page. Error handling has been implemented to ensure that the user sees the relevant message close to the respective input. There is also a `handleChange` function that makes it easy to update the input fields without code repetition. **You can login using dummy data, the application doesn't communicate with a server**.
 2. All icons that are reused throughout the project have been exported from the [ICON_SRC_MAPPING constant variable](/src/shared/constants/iconSrcMapping.ts).
 3. A new constant variable named [colors](/src/shared/constants/colors.ts) has been created which represents the available product colors.
 4. Responsive design is implemented by taking advantage of the mobile-first approach provided by Tailwind CSS. This allows components to react to various screen sizes seamlessly. For example, the [ProductGrid component](/src/shared/components/organisms/ProductGrid.tsx).
@@ -42,5 +42,5 @@ The project has been structured using the Atomic Design architecture. This organ
 
 ## Justification for optional libraries used
 
-1. **React Toastify**: I've used `react-toastify` because it is more user friendly and provides a better user experience than regular JavaScript alerts.
+1. **React Toastify**: I've used `react-toastify` because it is more user friendly and provides a better user experience compared to regular JavaScript alerts.
 2. **@Font Source Pretendard**: Using the `@fontsource/pretendard`is the recommended and most convenient method of installing pretendard. This allows me to apply the font family to the body element inside **index.css**
