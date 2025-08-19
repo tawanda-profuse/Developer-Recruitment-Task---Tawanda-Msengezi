@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #FFC40B;
+  --danger: #F24147;
+  --gold: #FAE100;
+  --off-white: #F8F6EE;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
