@@ -37,7 +37,7 @@ The project has been structured using the Atomic Design architecture. This organ
 2. All icons that are reused throughout the project have been exported from the [ICON_SRC_MAPPING constant variable](/src/shared/constants/iconSrcMapping.ts).
 3. A new constant variable named [colors](/src/shared/constants/colors.ts) has been created which represents the available product colors.
 4. Responsive design is implemented by taking advantage of the mobile-first approach provided by Tailwind CSS. This allows components to react to various screen sizes seamlessly. For example, the [ProductGrid component](/src/shared/components/organisms/ProductGrid.tsx).
-5. The [Navbar component](/src/shared/components/organisms/Navbar.tsx) which is embedded on all pages that use the [main layout](/src/shared/layouts/MainLayout.tsx) is responsive, allowing the user to expand it and seamlessly navigate the website on smaller screens. I've use responsive design to ensure that it is absolutely positioned on mobile devices and relatively positioned on larger screens.
+5. The [Navbar component](/src/shared/components/organisms/Navbar.tsx) which is embedded on all pages that use the [main layout](/src/shared/layouts/MainLayout.tsx) is responsive, allowing the user to expand it and seamlessly navigate the website on smaller screens. I've used responsive design to ensure that it is absolutely positioned on mobile devices and relatively positioned on larger screens.
 6. I've configured a [NotFound404 component](/src/pages/NotFound404.tsx) that redirects the application for all non-existent routes.
 
 ## Justification for optional libraries used
