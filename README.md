@@ -16,7 +16,7 @@ The project has been structured using the Atomic Design architecture. This organ
 **Atoms**:
 
 - All button components are inside the dedicated [atoms/buttons folder](/src/shared/components/atoms/buttons).
-- All input elements can be place inside the dedicated [atoms/inputs folder](/src/shared/components/atoms/inputs).
+- All input elements can be placed inside the dedicated [atoms/inputs folder](/src/shared/components/atoms/inputs).
 - The atoms folder also contains other single-use items such as [ErrorMessage](/src/shared/components/atoms/ErrorMessage.tsx) and [Label](/src/shared/components/atoms/Label.tsx).
 
 **Molecules**:
