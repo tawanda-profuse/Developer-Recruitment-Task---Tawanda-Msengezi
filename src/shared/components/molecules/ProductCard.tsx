@@ -2,13 +2,13 @@ import type { ProductType } from '../../types/productType'
 
 const ProductCard = ({ product }: ProductType) => {
   return (
-    <div className='cursor-pointer'>
+    <div className='cursor-pointer p-1'>
       <img src={product.img} alt={product.name} />
       {/* Product colors */}
-      <div className='grid grid-cols-10 gap-4 my-2'>
+      <div className='flex items-center flex-wrap gap-2 my-2'>
         {product.colors.map((item, index) => (
           <div
-            className={`rounded-full w-[1rem] h-[1rem] border border-[#444] bg-[${item}]`}
+            className={`rounded-full w-[1rem] h-[1rem] border border-[#444] ${item}`}
             key={`product-colors-${index}`}
           ></div>
         ))}

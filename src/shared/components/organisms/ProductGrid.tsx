@@ -66,7 +66,7 @@ const ProductGrid = () => {
           <ProductSkeletonList quantity={4} />
         </div>
       ) : products.length > 0 ? (
-        <div className='max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 my-8 gap-4'>
+        <div className='max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 my-8 gap-6'>
           {products.map((item, index) => (
             <ProductCard product={item} key={`${index}-product-grid`} />
           ))}

@@ -20,7 +20,7 @@ const Home = () => {
       </header>
       <section className='py-16'>
         <div className='max-w-5xl mx-auto px-4 '>
-          <h2>스타일과 실용성을 모두 담은 시즌 셀렉션</h2>
+          <h2 className='font-semibold'>스타일과 실용성을 모두 담은 시즌 셀렉션</h2>
           <div className='overflow-x-auto md:overflow-hidden scrollbar-none'>
             <div className='flex w-5xl gap-4 items-end justify-between my-4'>
               {[
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
         <img src={ICON_SRC_MAPPING['indicator']} alt='' className='mx-auto' />
       </section>
-      <section className='py-16'>
+      <section className='md:py-16'>
         <div className='px-4'>
           <ProductGrid />
         </div>
