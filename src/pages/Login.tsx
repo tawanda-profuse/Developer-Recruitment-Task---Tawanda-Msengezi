@@ -51,7 +51,7 @@ const Login = () => {
         onSubmit={handleSubmit}
       >
         <img src={ICON_SRC_MAPPING['logo']} alt='Logo' className='my-8' />
-
+        <p><strong className='text-red-500'>*</strong>{" "}Use username <strong>user@email.com</strong> and password <strong>123456789</strong></p>
         <InputField
           label='Username'
           name='username'
